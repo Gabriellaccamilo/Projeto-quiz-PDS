@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>TechQuiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>TechQuiz</h1>
+<h2 id="usuario"></h2>
+
+<p>
+Esse Quiz é composto por 10 perguntas sobre linguagens de programação e tecnologia da informação
+</p>
+
+<button onclick="iniciarQuiz()">Iniciar Quiz</button>
+
+</div>
+
+<script>
+
+function iniciarQuiz(){
+window.location.href="quiz.html";
+}
+
+</script>
+
+<script>
+
+const nome = localStorage.getItem("nomeUsuario");
+
+if(nome){
+document.getElementById("usuario").innerText = "Olá, " + nome + "!";
+}
+
+function iniciarQuiz(){
+window.location.href="quiz.html";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,44 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Cadastro</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>TechQuiz</title>
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="logo">
-      TechQuiz 
-      <br>
-      <span>&lt;/&gt;</span>
-    </div>
+<h1>TechQuiz</h1>
 
-    <h2>Cadastro Novo Usuário</h2>
+<p>Teste seus conhecimentos</p>
 
-    <div class="input-group">
-      <input type="text" id="nome" placeholder="Digite seu nome">
-    </div>
+<button onclick="iniciarQuiz()">Iniciar Quiz</button>
 
-    <div class="input-group">
-      <input type="email" id="email" placeholder="Digite seu e-mail">
-    </div>
+<script src="quiz.js"></script>
 
-    <div class="input-group">
-      <input type="password" id="senha" placeholder="Digite sua senha">
-    </div>
-
-    <button class="btn" onclick="cadastrar()">Cadastrar</button>
-
-    <div class="mensagem" id="mensagemSucesso">
-      Cadastro realizado com sucesso!
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
